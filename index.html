@@ -1,0 +1,43 @@
+<!doctype html>
+
+<head>
+  <title>Connect 4</title>
+
+  <meta charset="UTF-8" />
+  <meta name="description" content="Connect 4 game, getting 4 in a row" />
+  <meta name="keywords" content="connect 4 game players colours 
+  javascript oop html5 css" />
+  <meta name="author" content="Pritisha Kumar" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="connect4.css" rel="stylesheet">
+  <link rel="shortcut icon" href="icon.ico"/>
+</head>
+
+<body>
+
+  <h1>Let's Play Connect 4!</h1>
+
+  <p>Each player chooses a colour and presses the Add button. Start the game. 
+    Players alternate turns. On each turn, a piece is dropped down a column 
+    until a player gets four-in-a-row (horiz, vert, or diag) or until the
+    board fills</p>
+
+  <h3>Player List</h3>
+  <ol id="playerList">
+  </ol>
+
+  <input id="newPlayer" type="text" required placeholder="Player Color" />
+  <button id="newPlayerBut">Add New Player</button>
+  <button id="start">Start New Game</button>
+
+  <div id="game">
+    <table id="board"></table>
+  </div>
+
+  <!--not displayed, purely to validate player colors-->
+  <div id="colorTest"></div>
+
+  <script src="connect4.js"></script>
+</body>
+</html>
