@@ -18,10 +18,14 @@
 
   <h1>Let's Play Connect 4!</h1>
 
-  <p>Each player chooses a colour and presses the Add button. Start the game. 
-    Players alternate turns. On each turn, a piece is dropped down a column 
-    until a player gets four-in-a-row (horiz, vert, or diag) or until the
-    board fills</p>
+  <p>Each player chooses a colour and presses the Add button. Start the game.
+    Game starts with Player 1's turn. Players alternate turns. On each turn, 
+    a player click the top row to drop a piece into that column until a 
+    player gets four-in-a-row (horiz, vert, or diag) or until the board 
+    fills.  Can start new game with existing players or refresh the game 
+    to make a new list of players.</p>
+  <p>For a list of applicable colours, you can choose from the following 
+      list: <a href="CSS-colors.png" target=”_blank”>Colour List</a></p>
 
   <h3>Player List</h3>
   <ol id="playerList">
@@ -35,7 +39,7 @@
     <table id="board"></table>
   </div>
 
-  <!--not displayed, purely to validate player colors-->
+  <!--not displayed, purely to validate player color choice-->
   <div id="colorTest"></div>
 
   <script src="connect4.js"></script>
